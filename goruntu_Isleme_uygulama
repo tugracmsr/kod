@@ -15,3 +15,5 @@ elif soru==("BORDER_REPLICATE"):
 elif soru==("BORDER_WRAP"):
     çerçeve = cv2.copyMakeBorder(resim,10,10,10,10,cv2.BORDER_WRAP,value=[int(a),int(b),int(c)])
 cv2.imshow("resim",çerçeve)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
