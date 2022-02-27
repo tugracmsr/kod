@@ -1,0 +1,47 @@
+def islem(a, b, c):
+    c = c.upper()
+    if c == "1":
+        d = "toplamı"
+        e = a + b
+        print("sayıların {} :".format(d), e)
+    elif c == "2":
+        d = "farkı"
+        e = a - b
+        print("sayıların {} :".format(d), e)
+    elif c == "3":
+        d = "çarpımı"
+        e = a * b
+        print("sayıların {} :".format(d), e)
+    elif c == "4":
+        d = "bölümü"
+        e = a / b
+        print("sayıların {} :".format(d), e)
+    elif c == "5":
+        e = a ** b
+        print(a, "üzeri", str(b)+":", e)
+    elif c == "6":
+        e = a % b
+        print(a, "sayısının", b, "sayısına bölümünden kalan:", e)
+    elif c == "7":
+        exit()
+    else:
+        print("Girdiğiniz işlem yanlış bir daha girin")
+
+
+while True:
+    try:
+        s1 = int(input("1. sayıyı gir:"))
+        s2 = int(input("2. sayıyı gir:"))
+        i = input("""
+        HESAP MAKİNESİ
+        1- TOPLA
+        2- ÇIKAR
+        3- ÇARP 
+        4- BÖL
+        5- ÜST ALMA
+        6- KALAN BULMA
+        7- ÇIK""")
+        islem(s1, s2, i)
+    except ValueError:
+        print("Lütfen çalışması için bir sayı giriniz")
+    print("//////////////////////////////////////")
