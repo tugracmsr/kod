@@ -1,0 +1,12 @@
+def kullanici(a, b):
+    if a == "admin" and b == "123456":
+        return True
+    else:
+        return False
+
+
+if kullanici(input("kullanıcı adı gir"), input("şifre gir")):
+    print("Kullanıcı adı ve şifre doğru")
+    print("sisteme hoşgeldiniz")
+else:
+    print("Kullanıcı adı veya şifre yanlış")
